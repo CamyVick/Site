@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DICAS</title>
+    <style>
+        .dicas {
+            display: inline-block;
+            width: max-content;
+            padding: 0 10px;
+        }
+        .dicas > * {
+            font-size: 5rem;
+            font-weight: 650;
+            color: rgb(250, 7, 218);
+            
+        }
+        .dicas > :last-child {
+            transform: 
+                rotatex(180deg)
+                translateY(28px);
+            mask-image: 
+                linear-gradient(
+                    transparent 40%,
+                    white 80%
+                );
+            -webtkit-mask-imagem:
+                linear-gradient(
+                    transparent 40%,
+                    white 80%
+                );
+            opacity: 0.2;
+            
+        }
+        body{
+            background-color: rgb(5, 1, 24);
+        }
+        .aside a{
+            position: absolute;
+            left: -10px;
+            transition: 0.3s;
+            padding: 15px;
+            text-decoration:none ;
+            font-size: 20px;
+            color: #fff;
+            border-radius: 0 15px 15px 0;
+        }
+        .aside a:link{ 
+            background: fixed;
+            color: rgb(243, 240, 255);
+            background-color: rgb(91, 6, 250);
+            text-decoration: none;
+        }
+        .aside a:visited{
+            background: fixed;
+            color: rgb(243, 240, 255);
+            background-color: rgb(91, 6, 250);
+            text-decoration: none;
+        }
+        .aside a:hover{
+            left: 0;
+            background-color: rgb(0, 212, 250);
+        }
+        .aside a:active{
+            color: rgb(243, 240, 255);
+            background-color: rgb(162, 0, 255);
+        }
+        #home{
+            top: 200px;
+            width: 50px;
+            background-color: white;
+            color: rgb(162, 0, 255);
+        }
+        #filme{
+            top: 260px;
+        }
+        #livros{
+            top: 320px;
+            width: 70px;
+        }
+        #lojas{
+            top: 380px;
+            width: 60px;
+        }
+        #sistemas{
+            top:440px;
+            width: 90px;
+        }
+        #ferramentas{
+            top: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="dicas">
+        <div>DICAS</div>
+        <div>DICAS</div>
+    </div>
+    <aside class="aside">
+        <a href="#" id="filme">FILMES/SERIES</a>
+        <a href="#" id="livros">LIVROS</a>
+        <a href="#" id="lojas">LOJAS</a>
+        <a href="#" id="sistemas">SISTEMAS</a>
+        <a href="#" id="ferramentas">FERRAMENTAS</a>
+        <a href="Site.html" id="home">HOME</a>
+    </aside>
+    
+</body>
+</html>
