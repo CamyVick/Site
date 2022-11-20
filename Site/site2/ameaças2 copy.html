@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMEAÇAS</title>
+    <style>
+        .word-waves span{
+            top: 80px;
+            left: 200px;
+            position: absolute;
+            color: #fff;
+            font-size: 3rem;
+            transform: translate(-50%, -50%);
+        }
+        .word-waves span:nth-child(1){
+            color: transparent;
+            -webkit-text-stroke: 0.3px #7206ff;
+        }
+        .word-waves span:nth-child(2){
+            color: rgb(119, 0, 255);
+            -webkit-text-stroke: 1px #7206ff;
+            animation: animation 3s ease-in-out infinite;
+        }
+        @keyframes animation {
+            0%, 100% {
+                clip-path: polygon(0% 45%,15% 44%,32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+            }
+            50% {
+                clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+            }
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+          background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+          height: 100vh;
+          overflow: hidden;
+          display: flex;
+          font-family: "Anton", sans-serif;
+          justify-content: center;
+          align-items: center;
+            
+        }
+          .ctn {
+            display: block;
+            margin: auto;
+            text-align: center;
+          }
+            .b-green {
+              background: rgb(65, 0, 216);
+              background: -moz-linear-gradient(45deg, rgb(65, 0, 216) 0%, rgb(37, 95, 255) 100%);
+              background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(37, 95, 255)), color-stop(100%, rgba(37, 95, 255)));
+              background: -webkit-linear-gradient(45deg, rgba(65, 0, 216) 0%, rgba(37, 95, 255) 100%);
+              background: -o-linear-gradient(45deg, rgba(65, 0, 216) 0%, rgba(37, 95, 255) 100%);
+              background: -ms-linear-gradient(45deg, rgba(65, 0, 216) 0%, rgba(37, 95, 255) 100%);
+              background: linear-gradient(45deg, rgba(65, 0, 216) 0%, rgba(37, 95, 255) 100%);
+              filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e748ea', endColorstr='#4b1abc', GradientType=1 );
+            }
+            .b-pink{
+                background: rgb(65, 0, 216);
+                background: -moz-linear-gradient(45deg, rgb(65, 0, 216) 0%, rgb(37, 95, 255) 100%);
+                background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(37, 95, 255)), color-stop(100%, rgba(37, 95, 255)));
+                background: -webkit-linear-gradient(45deg, rgba(65, 0, 216) 0%, rgba(37, 95, 255) 100%);
+                background: -o-linear-gradient(45deg, rgba(65, 0, 216) 0%, rgba(37, 95, 255) 100%);
+                background: -ms-linear-gradient(45deg, rgba(65, 0, 216) 0%, rgba(37, 95, 255) 100%);
+                background: linear-gradient(45deg, rgba(65, 0, 216) 0%, rgba(37, 95, 255) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e748ea', endColorstr='#4b1abc', GradientType=1 );
+            }
+
+            .b-red{
+                background: rgb(65, 0, 216);
+                background: -moz-linear-gradient(45deg, rgb(65, 0, 216) 0%, rgb(37, 95, 255) 100%);
+                background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(37, 95, 255)), color-stop(100%, rgba(37, 95, 255)));
+                background: -webkit-linear-gradient(45deg, rgba(65, 0, 216) 0%, rgba(37, 95, 255) 100%);
+                background: -o-linear-gradient(45deg, rgba(65, 0, 216) 0%, rgba(37, 95, 255) 100%);
+                background: -ms-linear-gradient(45deg, rgba(65, 0, 216) 0%, rgba(37, 95, 255) 100%);
+                background: linear-gradient(45deg, rgba(65, 0, 216) 0%, rgba(37, 95, 255) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e748ea', endColorstr='#4b1abc', GradientType=1 );
+            }
+
+            .b-orange{
+                background: rgb(65, 0, 216);
+                background: -moz-linear-gradient(45deg, rgb(65, 0, 216) 0%, rgb(37, 95, 255) 100%);
+                background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(37, 95, 255)), color-stop(100%, rgba(37, 95, 255)));
+                background: -webkit-linear-gradient(45deg, rgba(65, 0, 216) 0%, rgba(37, 95, 255) 100%);
+                background: -o-linear-gradient(45deg, rgba(65, 0, 216) 0%, rgba(37, 95, 255) 100%);
+                background: -ms-linear-gradient(45deg, rgba(65, 0, 216) 0%, rgba(37, 95, 255) 100%);
+                background: linear-gradient(45deg, rgba(65, 0, 216) 0%, rgba(37, 95, 255) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e748ea', endColorstr='#4b1abc', GradientType=1 );
+            }
+
+            .b-blue{
+                background: rgb(65, 0, 216);
+                background: -moz-linear-gradient(45deg, rgb(65, 0, 216) 0%, rgb(37, 95, 255) 100%);
+                background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(37, 95, 255)), color-stop(100%, rgba(37, 95, 255)));
+                background: -webkit-linear-gradient(45deg, rgba(65, 0, 216) 0%, rgba(37, 95, 255) 100%);
+                background: -o-linear-gradient(45deg, rgba(65, 0, 216) 0%, rgba(37, 95, 255) 100%);
+                background: -ms-linear-gradient(45deg, rgba(65, 0, 216) 0%, rgba(37, 95, 255) 100%);
+                background: linear-gradient(45deg, rgba(65, 0, 216) 0%, rgba(37, 95, 255) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e748ea', endColorstr='#4b1abc', GradientType=1 );
+            }
+          .button {
+            display: inline-block;
+            position: relative;
+            border-radius: 3px;
+            text-decoration: none;
+            padding: .5em;
+            margin: .5em;
+            font-size: 2em;
+            font-weight: bold;
+            transition: all .5s;
+            -webkit-text-fill-color: transparent;
+          }
+          .button:hover {
+            text-shadow: 0px 0px 0px rgba(255, 255, 255, .75);
+          }
+          .button:hover:after {
+            left: 100%;
+            top: 100%;
+            bottom: 100%;
+            right: 100%;
+          }
+          .button:before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+            border-radius: 5px;
+            transition: all .5s;
+          }
+          .button:after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 2px;
+            top: 2px;
+            bottom: 2px;
+            right: 2px;
+            z-index: -1;
+            border-radius: 5px;
+            transition: all .5s;
+          }
+          .button2 {
+            display: inline-block;
+            font-size: 2em;
+            margin: .5em;
+            padding: .5em;
+            border-radius: 5px;
+            transition: all .5s;
+            filter: hue-rotate(0deg);
+            color: #FFF;
+            text-decoration: none;
+          }
+          .rot-360-noscoop:hover {
+            filter: hue-rotate(360deg);
+            transform: rotate(360deg);
+          }
+          .rot-135:hover {
+            filter: hue-rotate(135deg);
+          }
+          .rot-90:hover {
+            filter: hue-rotate(90deg);
+          }
+    </style>
+</head>
+<body>
+    <div class="word-waves">
+        <span>AMEAÇAS</span>
+        <span>AMEAÇAS</span>
+    </div>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+    <div class="ctn">
+    <a href="Site copy 2.html" class="button2 b-green rot-135">HOME</a>
+    <a href="virus.html" class="button2 b-pink rot-135">VÍRUS</a>
+    <a href="" class="button2 b-red rot-135">SPYWARE</a>
+    <a href="" class="button2 b-orange rot-135">SPAN</a>
+    <a href="" class="button2 b-blue rot-135">KEY</a>
+    </div>
+</body>
+</html> 
