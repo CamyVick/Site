@@ -52,7 +52,8 @@
             src: url(https://fonts.gstatic.com/s/satisfy/v17/rP2Hp2yn6lkG50LoCZOIGA.ttf) format('truetype');
           }
           body {
-            background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+            background: 
+            url("virus.jpg") fixed;
             font-family: 'Open Sans', "HelveticaNeue", "Helvetica", "Arial", sans-serif;
           }
           .sans {
@@ -95,16 +96,20 @@
           [class*='bg-'] {
             padding: 2em;
           }
-          .bg-red {
-            background: radial-gradient(ellipse at bottom, #231e30 0%, #1b013d 100%);
+          .bg-red{
+           background-color: #a200ff93;
             color: #ffffff;
           }
           .bg-black {
-            background: #a000fc;
+            background-color: #a200ff93;
             color: #ffffff;
           }
           .bg-grey {
-            background: #d200fc;
+            background-color: #a200ff93;
+            color: #ffffff;
+          }
+          .bg-red2{
+            background-color: #a200ff93;
             color: #ffffff;
           }
           
@@ -116,27 +121,38 @@
         <div class="pattern-body">
           <div class="bg-red">
             <h1>O que são os vírus</h1>
-            <h3>O que é um vírus de computador?</h3>  
+            <h2>O que é um vírus de computador?</h2>  
 
-            <p>Em termos mais técnicos, um vírus de computador é um tipo de programa ou código malicioso criado para alterar a forma como um computador funciona e desenvolvido para se propagar de um <u>computador para outro.</u> Um <b>vírus</b> atua se inserindo ou se anexando a um programa ou documento legítimo, que tenha suporte para macros, a fim de executar o seu código. Durante esse processo, um  vírus pode potencialmente causar efeitos inesperados ou prejudiciais, como danificar o software do sistema, corrompendo ou destruindo os dados.</p>
-            <p style="color:black ;"><small><b><i>Texto de teste</i></b></small></p>
+            <p>Os vírus de computador foram introduzidos na década de 1980, com funções simples que ocasionalmente geravam inconvenientes ou apenas mostravam informações ao usuário. Atualmente esse tipo de código traz um risco significativo com potencial destrutivo e que demandam grande esforço das organizações para manterem seus sistemas a salvo. A designação de vírus é tratada de acordo com sua função. Para que um código malicioso seja considerado um vírus ele deve ter a capacidade de autorreplicação, ou seja, fazer uma cópia de si mesmo e distribuir essa cópia para outros arquivos e programas do sistema infectado.</p> <br>
+            <p>Cada vírus pode utilizar um mecanismo de infecção diferente, por exemplo: inserir seu código em programas executáveis sobrescrevendo parte do código de maneira a permitir que toda vez que o programa infectado seja executado o código viral também seja executado. Portanto o principal objetivo de um vírus é replicar-se e contaminar o maior número possível de programas, de maneira a comprometer outros sistemas. Podemos dividir os vírus em duas grandes categorias [Kent et al. 2006]: vírus compilados e vírus interpretados.</p> 
             
-            <h3>Como um vírus de computador ataca?</h3>
-            <p>Depois de se anexar com êxito a um programa, arquivo ou documento, o vírus permanece inativo até que as circunstâncias obriguem o computador ou dispositivo a executar o seu código. Para que o vírus contamine o computador, será necessário executar o programa infectado, o que por sua vez obriga o código do vírus a ser executado. Isso significa que um vírus pode permanecer inativo em seu computador, sem demonstrar nenhum sinal ou sintoma.</p>
-            <p>Porém, quando o vírus contamina o computador, ele pode também contaminar outros computadores na mesma rede. Roubar senhas ou dados, registrar o uso do teclado, corromper arquivos, enviar spam aos seus contatos de email e até mesmo controlar o seu computador são apenas algumas das ações irritantes e devastadoras que um vírus pode executar.</p>
-            
-            <h3>Como os vírus de computador se propagam?</h3>
-            <p>No mundo atual, constantemente conectado, você pode contrair um vírus de computador de várias formas, algumas mais óbvias do que outras. Os vírus podem se propagar através de anexos de email ou mensagens de texto, downloads de arquivos da Internet e links para golpes em mídias sociais.</p>
-            <p>Até mesmo os dispositivos móveis e smartphones podem ser infectados com vírus através do download de aplicativos duvidosos nesses dispositivos. Os vírus podem se esconder disfarçados como anexos de conteúdos compartilhados socialmente, como imagens humorísticas, cartões comemorativos ou arquivos de áudio e vídeo.Para evitar o contato com um vírus, é importante ter cautela ao navegar na Internet, baixar arquivos e abrir links ou anexos. A prática recomendada é nunca fazer o download de textos ou anexos de emails não esperados ou de arquivos de sites nos quais você não confia.</p>
-            
-            <h3>Como se proteger contra vírus de computador?</h3>
-            <p>Como pode ver, o vírus de computador, semelhante a um vírus de gripe, é algo que você certamente deseja evitar. Os termos vírus e malware são normalmente usados como sinônimos. Porém, um vírus é um dos vários tipos de malware e somente um aspecto do cenário geral de ameaças. Por isso o software antivírus tradicional não fornecerá proteção total contra todas as ameaças.</p>
-            <p>Procure um software de segurança completo como o Norton Security. Com tecnologias patenteadas que funcionam de forma integrada para superar as ameaças online, verificando o sistema em busca de vírus e executando contínuas atualizações silenciosas, o Norton Security o mantém protegido contra ameaças novas, existentes e até mesmo as que ainda serão inventadas. E, se um vírus transgredir a nossa vigilância durante a vigência da sua assinatura, os especialistas de suporte do Norton farão o que for possível para ajudar a corrigir o problema, sem nenhum custo adicional.</p>
+          </div> 
+          <div class="bg-black">
+            <h2>Vírus Compilado:</h2>
+            <p><strong>Infector de programas: </strong>Infectam programas executáveis, onde o programa infectado se propaga para infectar outros programas no sistema, bem como outros sistemas que usam um programa infectado compartilhado. </p>
+            <br>
+            <p><strong>Setor de Boot: </strong>Infectam o setor Master Boot Record (MBR) do disco rígido ou mídia removível inicializável. Esse tipo de vírus foi muito utilizado nas décadas 1980 e 1990, atualmente está em desuso.</p>
+            <br>
+            <p><strong>Multipartite: </strong>Utiliza métodos de infecção múltipla, normalmente infectando arquivos e setores de boot. Assim, os vírus multipartite combinam as características dos vírus que infectam arquivos e setor de inicialização.</p>
+            <br>
+          </div>
+          <div class="bg-grey">
+            <h2>Vírus Interpretados</h2>
+            <p><strong>Vírus de macro: </strong>Utilizam técnicas de propagação baseadas em anexo de documentos que executam macros, como planilhas eletrônicas e processadores de texto. Estes vírus tendem a se espalhar rapidamente, porque os usuários frequentemente compartilham documentos com recursos de macro habilitados. Além disso, quando uma infecção ocorre, o vírus infecta o modelo que o programa usa para criar e abrir arquivos. Uma vez que um modelo é infectado, cada documento que é criado ou aberto com esse modelo também será infectado.</p>
+            <br>
+            <p><strong>Vírus de script: </strong>Nesse tipo de vírus a principal diferença, em relação ao de macro, é a linguagem utilizada. O código é escrito para um serviço e sistema operacional específico, como por exemplo VBScript que executa em um servidor com sistema operacional Windows. Técnicas de ofuscação podem ser utilizadas no código de vírus, particularmente para dificultar sua detecção. As técnicas mais comuns são: </p>
+            <h5><strong>•	Criptografia: O código possui funções para cifrar e decifrar o executável do vírus, gerando porções de códigos aleatórios para cada infecção. </strong></h5>
+            <h5><strong>•	Polimorfismo: Um modelo mais robusto que usa criptografia, com o código gerando um executável com tamanho e aparência diferentes para cada infecção, podem também habilitar funcionalidades diferentes na ação. Metamorfismo: Assim como os polimórficos mudam o comportamento, podendo gerar códigos novos a cada iteração através de técnicas de códigos desnecessários, sendo recompilado e criando um executável.</strong></h5>
+            <br>
+          </div>
+          <div class="bg-red2">
+            <h2>Quais são os efeitos sobre o meu aparelho ou sobre uma rede?</h2>
+            <p>A maioria dos vírus necessita da ativação do usuário final e pode ser ativada em uma hora ou data específica. Os vírus podem ser inofensivos e apenas mostrar uma imagem ou podem ser destrutivos e excluir dados. Eles também podem ser programados para se modificarem para evitar a detecção. A maioria dos vírus é espelhada por unidades de USB, discos ópticos, compartilhamento de rede ou e-mail.</p>
             <p class="muted">Retirado de <b>norton</b></p>
             <aside class="aside">
               <a href="https://br.norton.com/blog/malware/what-is-a-computer-virus#:~:text=Em%20termos%20mais%20técnicos%2C%20um,de%20um%20computador%20para%20outro." style="color:white ;"><i>Para mais informações</i></a>
             </aside>
-          </div>      
+          </div>
         </div>
       </div>
 </body>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+          font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+          background: radial-gradient(ellipse at bottom, #836af1 0%, #3000a9 100%);
+        }    
+
+
+        @media screen and (min-width: 48em) {
+        }
+        
+      
+        .bg-dark.hero-banner {
+            background-color: #0f161d;;
+            width: 100%;
+        }
+
+        
+        .hero-banner * {
+          display: block;
+          width: 100%;
+          position: relative;
+          z-index: 1;
+          
+          color: #fff;
+        }
+        .bg-dark.hero-banner * {
+          color: #fff;
+        }
+        .bg-light.hero-banner * {
+          color: rgb(59, 0, 168);
+        }
+        .copy-wrapper {
+          max-width: 78.000rem;
+          padding: 2.500rem 0 2.500rem 0; 
+          margin: 0 auto; 
+          
+
+        }
+        .copy-width {
+          width: 100%;
+        }
+        .hero-banner h1,
+        .hero-banner p {
+          margin: 0;
+          width: 100%;
+        }
+        .hero-banner h1 {
+          font-weight: bold;
+          font-weight: 500;
+          
+          font-size: 2.000rem; 
+          line-height: 2.250rem;
+        }
+        .hero-banner p {
+          font-weight: normal;
+          font-weight: 400;
+          
+          font-size: 1.125rem; 
+          line-height: 1.500rem; 
+          
+          margin-top: 0.813rem;
+        }
+       
+        @media screen and (min-width: 48em) {
+          .copy-width {
+            width: calc((100% - 2rem) * 0.333);
+          }
+          .hero-banner h1 {
+            font-size: 3.000em; 
+            line-height: 3.375rem; 
+          }
+        }
+        @media screen and (min-width: 68em) {
+          .hero-banner h1 {
+            font-size: 3.000em; 
+            line-height: 3.375rem; 
+          }
+        }
+        
+       
+        .banner-img {
+          display: block;
+          
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          z-index: 0;
+          
+          margin: 0;
+          padding: 0;
+        }
+        .banner-img picture,
+        .banner-img img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          z-index: 0;
+          
+          margin: 0;
+          padding: 0;
+          
+          width: 100%;
+          height: 100%;
+          
+          overflow: hidden;
+          
+          display: block;
+          object-fit: cover;
+          object-position: 50% 50%;
+        }
+
+        .bg-dark .banner-img:after,
+        .bg-light .banner-img:after {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          z-index: 1;
+          
+          background: rgb(59, 0, 168); 
+          
+        
+        }
+        .bg-light .banner-img:after {
+          background: rgba(255,255,255,0.24); 
+          
+        
+        }
+        
+        .notes {
+          padding: 2rem 1rem;
+        }
+        .notes .inner {
+          max-width: 78.000rem;
+          margin: 0 auto;
+        }
+        .notes h2 {
+          margin: 0 0 1rem 0;
+          font-size: 1rem;
+        }
+        .notes .usage {
+          margin: 0;
+          font-family: "Courier New", Courier, monospace;
+          font-size: 1rem;
+          color: rgb(169, 171, 185);
+        }
+        p, h1, h3, h2, h5{
+            text-align: justify;
+            width: 80%;
+            color: #fff;
+        }
+       
+        
+    </style>
+</head>
+<body>
+    <section class="hero-banner bg-dark">
+        <img src="site.jpg" alt="">
+        <div class="copy-wrapper">
+            <div class="copy-width">
+                <h1><a href="segurança2.html" style="text-decoration: none;">Sites</a></h1>
+            
+                <h2><strong>Como se proteger em: </strong></h2>
+                <p>Com a ascensão da internet abriu-se uma possibilidade infinita de tudo que se possa imaginar, prestação de serviços, consultas médicas, compras online, jogos, home office etc. Entre tanto como saber se aquilo que eu procurei e consequentemente achei é real?
+                  Aqui estão 6 passos que se deve tomar segundo o site <strong><a href="https://www.hostinger.com.br/tutoriais/como-saber-se-um-site-e-seguro" >hostinger.</a> </strong></p>
+                <br>
+            </div>
+        </div>
+    </section>
+  
+    <section class="notes">
+        <div class="inner">
+            <h3>1.	Confira o Domínio e a URL </h3>
+            <p>O domínio do site é o endereço que você digitou para chegar nele, localizado na barra do navegador. Um site profissional certamente terá um domínio profissional, que te passe confiança e credibilidade. </p>
+            <p>Outra coisa a ser observada no endereço, é o tão necessário S no HTTPS.</p>
+            <img src="Imagem1.png" alt="">
+            <p>Entenda : URL`s são emitidas por <strong> HTTP (Hypertext Transfer Protocol)</strong> ou <strong> HTTPS (Hypertext Transfer Protocol Secure)</strong>. O <strong>HTTPS</strong>  é uma extensão segura do HTTP. E somente os sites que possuem certificado SSL/TLS podem utilizar o protocolo HTTPS para estabelecer uma comunicação segura com o servidor. Veja o gráfico:</p>
+            <img src="Imagem2.png" alt="">
+            <p>Uma das formas de como saber se um site é seguro, é verificando se este site possui o certificado SSL. Certificados SSL/TLS emitem uma chave criptográfica à informação. Com isso, os dados podem ser transferidos com segurança e protegidos de acesso de terceiros.</p>
+            <br>
+
+            <h3>2.	Pesquise a Reputação e Histórico do Site</h3>
+            <p>O que estão falando desse site e dessa empresa na internet? Uma simples consulta no Google ou no buscador de sua preferência poderá te trazer resultados impressionantes sobre o passado de um site. Consulte.
+                <br> Atente-se para consultar fontes confiáveis.</p>
+            <p>O Google Meu Negócio pode ser um começo. Este serviço do Google está disponível para todos, usuários e empresas, e contém informações valiosas para te ajudar a identificar se um site é seguro.</p>
+            <br>
+            
+            <h3>3.	Busque por Selos de Segurança</h3>
+            <p>Selos de segurança certificam que um site é seguro pelo órgão emissor do selo. Pode ser um selo do certificado SSL ou de outros emissores. Esses selos podem ser encontrados no fim da página ou durante o processo de compra no carrinho.</p>
+            <img src="Imagem3.png" alt="">
+            <p>Atente-se! Sites maliciosos podem simplesmente adicionar a imagem do selo sem de fato possuir a certificação. Por isso, não confie apenas neste sinal.</p>
+            <br>
+
+            <h3>4.	Consulte a Política de Privacidade</h3>
+            <p>A Política de Privacidade de um site deve ser clara sobre quais os dados que o site coleta e armazena, e para quais fins são usados.</p>
+            <img src="Imagem4.png" alt="">
+            <p>Isso assegura que este site está operando conforme a lei e regulamentos locais onde atua, como a GDPR.</p>
+            <br>
+
+            <h3>5.	Confirme as Informações de Contato</h3>
+            <p>Consulte no Google Meu Negócio, como mostramos no tópico 2, mas também veja dentro do próprio site. Geralmente, na página “Sobre” você encontrará informações sobre a história da empresa e endereços, ou no rodapé.</p>
+            <br>
+            <p>Um site seguro não terá problema em divulgar suas informações como endereço, local onde atua, quem são as pessoas responsáveis ali. Isso não quer dizer que eles estão te protegendo por simplesmente passar informações de contato, mas é uma segurança em saber que você terá com a quem recorrer caso precise.</p>
+            <br>
+
+            <h3>6.	 Proteja-se de Vírus</h3>
+            <p>E se tem algo que acontece e nem sempre está visível aos olhos são vírus e malwares. 
+            <br> Mesmo conferindo e atestando todos os sinais que destacamos aqui, um site pode estar infectado por um malware. Para saber se este é o caso, veja alguns sinais:</p>
+            <h5>
+              1.	Avisos de sites infectados dos próprios navegadores. <br><br>
+              2.	Sites suspeitos com erros de ortografia e gramática, com comunicação apelativa geralmente protegendo o que sabemos ser fora do normal. <br><br>
+              3.	URL`s suspeitas. Ao para com o mouse em cima de uma URL, você pode saber para onde o link está te direcionando e assim decidir clicar ou não. Clique aqui e veja no canto inferior esquerdo que este link está te levando para a página da Hostinger. <br><br>
+              4.	Pop-ups suspeitos, aquelas janelas pequenas que abrem na sua tela pedindo para que você tome alguma ação, seja um clique ou que compartilhe alguma informação. <br><br>
+
+            <h5>
+            <p class="usage">Estas informações foram retiradas diretamente do site <strong>hostinger</strong> <br>
+            "Hostinger International, Ltd é um provedor de Hospedagem Web de propriedade de funcionários e registrador de domínio na Internet, estabelecido em 2004. A Hostinger é a empresa-mãe da 000Webhost, Niagahoster e Weblink."</p>
+    </section>
+</body>
+</html>

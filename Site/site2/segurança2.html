@@ -6,105 +6,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SEGURANÇA</title>
     <style>
-        .segurança {
-            display: inline-block;
-            width: max-content;
-            padding: 0 10px;
-        }
-        .segurança > * {
-            font-size: 5rem;
-            font-weight: 650;
-            color: rgb(7, 213, 250);
-            
-        }
-        .segurança > :last-child {
-            transform: 
-                rotatex(180deg)
-                translateY(22px);
-            mask-image: 
-                linear-gradient(
-                    transparent 40%,
-                    white 80%
-                );
-            -webtkit-mask-imagem:
-                linear-gradient(
-                    transparent 40%,
-                    white 80%
-                );
-            opacity: 0.2;
-            
-        }
-        body{
-            background-color: rgb(5, 1, 24);
-        }
-        .aside a{
-            position: absolute;
-            left: -10px;
-            transition: 0.3s;
-            padding: 15px;
-            text-decoration:none ;
-            font-size: 20px;
-            color: #fff;
-            border-radius: 0 15px 15px 0;
-        }
-        .aside a:link{ 
-            background: fixed;
-            color: rgb(243, 240, 255);
-            background-color: rgb(255, 7, 234);
-            text-decoration: none;
-        }
-        .aside a:visited{
-            background: fixed;
-            color: rgb(243, 240, 255);
-            background-color: rgb(255, 7, 234);
-            text-decoration: none;
-        }
-        .aside a:hover{
-            left: 0;
-            background-color: rgb(96, 0, 250);
-        }
-        .aside a:active{
-            color: rgb(243, 240, 255);
-            background-color: rgb(139, 20, 130);
-        }
-        #home{
-            top: 200px;
-            width: 50px;
-            background-color: white;
-            color: rgb(255, 7, 234);
-        }
-        #site{
-            top: 260px;
-        }
-        #firewall{
-            top: 320px;
-            width: 85px;
-        }
-        #antivirus{
-            top: 380px;
-            width: 100px;
-        }
-        #ferramentas{
-            top:440px;
-            width: 135px;
-        }
-        #erros{
-            top: 500px;
-        }
+      .word-waves span{
+        top: 80px;
+        left: 200px;
+        position: absolute;
+        color: #fff;
+        font-size: 3rem;
+        transform: translate(-50%, -50%);
+      }
+      .word-waves span:nth-child(1){
+          color: transparent;
+          -webkit-text-stroke: 0.3px #a25bff;
+      }
+      .word-waves span:nth-child(2){
+          color: rgb(119, 0, 255);
+          -webkit-text-stroke: 1px #7206ff;
+          animation: animation 3s ease-in-out infinite;
+      }
+      @keyframes animation {
+          0%, 100% {
+              clip-path: polygon(0% 45%,15% 44%,32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+          }
+          50% {
+              clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+          }
+      }
+      *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: Arial, Helvetica, sans-serif;
+      }
+      body{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 100vh;
+          flex-direction: column;
+          gap: 40px;
+          background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+      }
+      a{
+          position: relative;
+          background: rgb(17, 9, 46);
+          color: #fff;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-size: 1.5em;
+          font-weight: bold;
+          letter-spacing: 0.1em;
+          padding: 10px 30px;
+          transition: 0.5s;
+      }
+      a:hover{
+          letter-spacing: 0.25em;
+          background: var(--clr);
+          box-shadow: 0 0 35px var(--clr);
+
+      }
+      a::before{
+          content: '';
+          position: absolute;
+          inset: 2px;
+          background: #0b153d;
+      }
+      a span{
+          position: relative;
+          z-index: 1;
+      }
+      a i {
+          position: absolute;
+          inset: 0;
+          display: block;
+      }
+      a i::before{
+          content: "";
+          position: absolute;
+          top: -6px;
+          left: 100%;
+          transform: translate(-50%);
+          width: 10px;
+          height: 10px;
+          background: #101b44;
+          border: 2px solid var(--clr);
+          transition: 0.5s;
+      }
+      a:hover i::before{
+          left: 0%;
+          transform: translate(-50%) rotate(45deg);
+          box-shadow: 34px 35px var(--clr);
+      }
+      a i::after{
+          content: '';
+          position: absolute;
+          bottom: -6px;
+          left: 0%;
+          transform: translate(-50%);
+          width: 10px;
+          height: 10px;
+          background: #051349;
+          border: 2px solid var(--clr);
+          transition: 0.5s;
+      }
+      a:hover i::after{
+          left: 100%;
+          transform: translate(-50%) rotate(-45deg);
+          box-shadow: 32px -35px var(--clr);
+      }
     </style>
 </head>
 <body>
-    <div class="segurança">
-        <div>SEGURANÇA</div>
-        <div>SEGURANÇA</div>
+    <div class="word-waves">
+        <span>SEGURANÇA</span>
+        <span>SEGURANÇA</span>
     </div>
     <aside class="aside">
-        <a href="#" id="site">SITES</a>
-        <a href="#" id="firewall">FIREWALL</a>
-        <a href="#" id="antivirus">ANTIVIRUS</a>
-        <a href="#" id="ferramentas">FERRAMENTAS</a>
-        <a href="#" id="erros">ERROS COMUNS</a>
-        <a href="Site.html" id="home">HOME</a>
-    </aside>
+      <a href="Site copy 2.html" style="--clr: #F0F8FF" id="home"><span>HOME</span><i></i></a>
+      <a href="site.html" style="--clr: #9400D3" id="site"><span>SITE</span><i></i></a>
+      <a href="#" style="--clr: #9400D3" id="firewall"><span>FIREWALL</span><i></i></a>
+      <a href="#" style="--clr: #9400D3" id="ferramentas"><span>FERRAMENTAS</span><i></i></a>
+  </aside>
 </body>
-</html>
+</html> 

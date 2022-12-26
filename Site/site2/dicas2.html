@@ -4,108 +4,190 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DICAS</title>
+    <title>Document</title>
     <style>
-        .dicas {
-            display: inline-block;
-            width: max-content;
-            padding: 0 10px;
-        }
-        .dicas > * {
-            font-size: 5rem;
-            font-weight: 650;
-            color: rgb(250, 7, 218);
-            
-        }
-        .dicas > :last-child {
-            transform: 
-                rotatex(180deg)
-                translateY(28px);
-            mask-image: 
-                linear-gradient(
-                    transparent 40%,
-                    white 80%
-                );
-            -webtkit-mask-imagem:
-                linear-gradient(
-                    transparent 40%,
-                    white 80%
-                );
-            opacity: 0.2;
-            
-        }
-        body{
-            background-color: rgb(5, 1, 24);
-        }
-        .aside a{
-            position: absolute;
-            left: -10px;
-            transition: 0.3s;
-            padding: 15px;
-            text-decoration:none ;
-            font-size: 20px;
-            color: #fff;
-            border-radius: 0 15px 15px 0;
-        }
-        .aside a:link{ 
-            background: fixed;
-            color: rgb(243, 240, 255);
-            background-color: rgb(91, 6, 250);
+        .pattern {
+            margin-bottom: 2em;
+            position: relative;
+          }
+          .pattern-head {
+            margin: 2em 0;
+            font-family: "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+            font-size: 200%;
+            font-weight: normal;
+            padding: 1em 0;
+            color: rgb(255, 255, 255);
+            border-bottom: 1px solid #e0e0e0;
+          }
+          @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-stretch: normal;
+            src: url(https://fonts.gstatic.com/s/opensans/v34/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVc.ttf) format('truetype');
+          }
+          @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-stretch: normal;
+            src: url(https://fonts.gstatic.com/s/opensans/v34/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4gaVc.ttf) format('truetype');
+          }
+          @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojISmb2Rm.ttf) format('truetype');
+          }
+          @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 700;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoa4Omb2Rm.ttf) format('truetype');
+          }
+          @font-face {
+            font-family: 'Satisfy';
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://fonts.gstatic.com/s/satisfy/v17/rP2Hp2yn6lkG50LoCZOIGA.ttf) format('truetype');
+          }
+          body {
+            background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+            font-family: 'Open Sans', "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+          }
+          .sans {
+            font-family: 'Open Sans', "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+          }
+          .serif {
+            font-family: 'Roboto Slab', Georgia, Times, "Times New Roman", serif;
+          }
+          .script {
+            font-family: 'Satisfy', cursive;
+          }
+          p{
+            margin: 0;
+            text-align: justify ;
+          }
+          .big {
+            font-size: 1.25em;
+          }
+          .muted {
+            color: rgb(255, 255, 255);
+          }
+          .aside,h2 a:link{ 
+              background: fixed;
+              text-decoration: none;
+          }
+          .aside,h2 a:visited{
+            color: rgb(247, 247, 247);
+            background-color: #ffff;
             text-decoration: none;
-        }
-        .aside a:visited{
-            background: fixed;
-            color: rgb(243, 240, 255);
-            background-color: rgb(91, 6, 250);
-            text-decoration: none;
-        }
-        .aside a:hover{
-            left: 0;
-            background-color: rgb(0, 212, 250);
-        }
-        .aside a:active{
-            color: rgb(243, 240, 255);
-            background-color: rgb(162, 0, 255);
-        }
-        #home{
-            top: 200px;
-            width: 50px;
-            background-color: white;
-            color: rgb(162, 0, 255);
-        }
-        #filme{
-            top: 260px;
-        }
-        #livros{
-            top: 320px;
-            width: 70px;
-        }
-        #lojas{
-            top: 380px;
-            width: 60px;
-        }
-        #sistemas{
-            top:440px;
-            width: 90px;
-        }
-        #ferramentas{
-            top: 500px;
-        }
+          }
+          .aside,h2 a:hover{
+              left: 0;
+          
+          }
+          .aside,h2 a:active{
+              color: rgb(254, 253, 255);
+
+          } 
+
+          [class*='bg-'] {
+            padding: 2em;
+          }
+          .bg-red {
+            background: radial-gradient(ellipse at bottom, #231e30 0%, #1b013d 100%);
+            color: #ffffff;
+          }
+          .bg-black {
+            background: #a000fc;
+            color: #ffffff;
+          }
+          .bg-grey {
+            background: #d200fc;
+            color: #ffffff;
+          }
+          
     </style>
 </head>
 <body>
-    <div class="dicas">
-        <div>DICAS</div>
-        <div>DICAS</div>
-    </div>
-    <aside class="aside">
-        <a href="#" id="filme">FILMES/SERIES</a>
-        <a href="#" id="livros">LIVROS</a>
-        <a href="#" id="lojas">LOJAS</a>
-        <a href="#" id="sistemas">SISTEMAS</a>
-        <a href="#" id="ferramentas">FERRAMENTAS</a>
-        <a href="Site.html" id="home">HOME</a>
-    </aside>
-    
+    <div class="pattern">
+        <h2 class="pattern-head"><a href="ameaças2 copy.html">DICAS</a></h2>
+        <div class="pattern-body">
+          <div class="bg-red">
+            <h1>Software livre</h1>
+            <h3>Aplicativos gratuitos que quebram um galho :) </h3>  
+
+            <p>Software livre ou não proprietários são aqueles que estão sob uma licença livre e que seu uso, modificação e distribuição são permitidos a todos.</p>
+            <br>
+            <p>São conhecidos também como open source, referindo-se a licença livre que eles tem.
+                A primeira destina a usuários que ao modificarem ou incorporar um software livre
+                em um trabalho próprio deverá disponibilizá-lo também sobre a mesma licença. Já a
+                segunda é mais liberal e destina inclusive a softwares proprietários.
+            </p>
+            <br>
+            <p>Como uma forma segura de fazer download destes softwares/aplicativos da Internet,
+                instalar um software antivírus pode protegê-lo contra downloads carregados de vírus,
+                é sempre melhor saber o mais seguro sites para fazer download de software.
+                Existem muitos sites disponíveis na web de onde você pode baixar software gratuito,
+                tais como os baixados na loja android Google Play e na loja da Mac, AppStore.
+            </p>
+            
+            <h3>SISTEMA OPERACIONAL LINUX</h3>
+            <p></p>
+            <p>Linux é um Sistema Operacional, assim como o Windows e o Mac OS, que possibilita a execução de programas em um computador e outros dispositivos. Linux pode ser livremente modificado e distribuído.Apesar desta interpretação ser simplista é perfeitamente correta e aceitável. </p>
+            <p style="color:blue ;"><a href="https://www.linux.org">linux.org</a></p>
+
+            <h3>BANCO DE DADOS MySQL</h3>
+            <p></p>
+            <p></p>
+            
+            <h3> OPEN OFFICE</h3>
+            <p></p>
+            <p></p>
+            
+            <h3>EDITOR DE IMAGENS GIMP</h3>
+            <p></p>
+            <p></p>
+
+            <h3>LIBRE OFFICE</h3>
+            <p></p>
+            <p></p>
+
+            <h3>AVAST FREE</h3>
+            <p></p>
+            <p></p>
+
+            <h3>BROFFICE</h3>
+            <p></p>
+            <p></p>
+
+            <h3>AVIRAPERSONAL EDITION</h3>
+            <p></p>
+            <p></p>
+
+            <h3>VIDEOSPIN</h3>
+            <p></p>
+            <p></p>
+
+            <h3>AUDACITY</h3>
+            <p></p>
+            <p></p>
+
+            <h3>7 ZIP</h3>
+            <p></p>
+            <p></p>
+
+            <h3> MEGACUBO</h3>
+            <p></p>
+            <p></p>
+
+            <p class="muted">Retirado de <b>norton</b></p>
+            <aside class="aside">
+              <a href="https://br.norton.com/blog/malware/what-is-a-computer-virus#:~:text=Em%20termos%20mais%20técnicos%2C%20um,de%20um%20computador%20para%20outro."><i>Para mais informações</i></a>
+            </aside>
+          </div>      
+        </div>
+      </div>
 </body>
 </html>
