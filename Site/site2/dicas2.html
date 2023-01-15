@@ -1,193 +1,239 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .pattern {
-            margin-bottom: 2em;
-            position: relative;
-          }
-          .pattern-head {
-            margin: 2em 0;
-            font-family: "HelveticaNeue", "Helvetica", "Arial", sans-serif;
-            font-size: 200%;
-            font-weight: normal;
-            padding: 1em 0;
-            color: rgb(255, 255, 255);
-            border-bottom: 1px solid #e0e0e0;
-          }
-          @font-face {
-            font-family: 'Open Sans';
-            font-style: normal;
-            font-weight: 400;
-            font-stretch: normal;
-            src: url(https://fonts.gstatic.com/s/opensans/v34/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVc.ttf) format('truetype');
-          }
-          @font-face {
-            font-family: 'Open Sans';
-            font-style: normal;
-            font-weight: 700;
-            font-stretch: normal;
-            src: url(https://fonts.gstatic.com/s/opensans/v34/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4gaVc.ttf) format('truetype');
-          }
-          @font-face {
-            font-family: 'Roboto Slab';
-            font-style: normal;
-            font-weight: 400;
-            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojISmb2Rm.ttf) format('truetype');
-          }
-          @font-face {
-            font-family: 'Roboto Slab';
-            font-style: normal;
-            font-weight: 700;
-            src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoa4Omb2Rm.ttf) format('truetype');
-          }
-          @font-face {
-            font-family: 'Satisfy';
-            font-style: normal;
-            font-weight: 400;
-            src: url(https://fonts.gstatic.com/s/satisfy/v17/rP2Hp2yn6lkG50LoCZOIGA.ttf) format('truetype');
-          }
-          body {
-            background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-            font-family: 'Open Sans', "HelveticaNeue", "Helvetica", "Arial", sans-serif;
-          }
-          .sans {
-            font-family: 'Open Sans', "HelveticaNeue", "Helvetica", "Arial", sans-serif;
-          }
-          .serif {
-            font-family: 'Roboto Slab', Georgia, Times, "Times New Roman", serif;
-          }
-          .script {
-            font-family: 'Satisfy', cursive;
-          }
-          p{
-            margin: 0;
-            text-align: justify ;
-          }
-          .big {
-            font-size: 1.25em;
-          }
-          .muted {
-            color: rgb(255, 255, 255);
-          }
-          .aside,h2 a:link{ 
-              background: fixed;
-              text-decoration: none;
-          }
-          .aside,h2 a:visited{
-            color: rgb(247, 247, 247);
-            background-color: #ffff;
-            text-decoration: none;
-          }
-          .aside,h2 a:hover{
-              left: 0;
-          
-          }
-          .aside,h2 a:active{
-              color: rgb(254, 253, 255);
-
-          } 
-
-          [class*='bg-'] {
-            padding: 2em;
-          }
-          .bg-red {
-            background: radial-gradient(ellipse at bottom, #231e30 0%, #1b013d 100%);
-            color: #ffffff;
-          }
-          .bg-black {
-            background: #a000fc;
-            color: #ffffff;
-          }
-          .bg-grey {
-            background: #d200fc;
-            color: #ffffff;
-          }
-          
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dicas</title>
+  <style>
+    :root{
+      --background-dark: #2d3548;
+      --text-light: rgba(255,255,255,0.6);
+      --text-lighter: rgba(255,255,255,0.9);
+      --spacing-s: 8px;
+      --spacing-m: 16px;
+      --spacing-l: 24px;
+      --spacing-xl: 32px;
+      --spacing-xxl: 64px;
+      --width-container: 1200px;
+    }
+    
+    *{
+      border: 0;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    html{
+      height: 100%;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+    }
+    
+    body{
+      height: 100%;
+      background-color: #2d3548;
+    }
+    p{
+      height: 100%;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      color: rgb(255, 255, 255);
+      text-align: justify;
+    }
+    .hero-section{
+      align-items: flex-start;
+      background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+      display: flex;
+      min-height: 100%;
+      justify-content: center;
+      padding: var(--spacing-xxl) var(--spacing-l);
+    }
+    
+    .card-grid{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-column-gap: var(--spacing-l);
+      grid-row-gap: var(--spacing-l);
+      max-width: var(--width-container);
+      width: 100%;
+    }
+    
+    @media(min-width: 540px){
+      .card-grid{
+        grid-template-columns: repeat(2, 1fr); 
+      }
+    }
+    
+    @media(min-width: 960px){
+      .card-grid{
+        grid-template-columns: repeat(4, 1fr); 
+      }
+    }
+    
+    .card{
+      list-style: none;
+      position: relative;
+    }
+    
+    .card:before{
+      content: '';
+      display: block;
+      padding-bottom: 150%;
+      width: 100%;
+    }
+    
+    .card__background{
+      background-size: cover;
+      background-position: center;
+      border-radius: var(--spacing-l);
+      bottom: 0;
+      filter: brightness(0.75) saturate(1.2) contrast(0.85);
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      transform-origin: center;
+      transform: scale(1) translateZ(0);
+      transition: 
+        filter 200ms linear,
+        transform 200ms linear;
+    }
+    
+    .card:hover .card__background{
+      transform: scale(1.05) translateZ(0);
+    }
+    
+    .card-grid:hover > .card:not(:hover) .card__background{
+      filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+    }
+    
+    .card__content{
+      left: 0;
+      padding: var(--spacing-l);
+      position: absolute;
+      top: 0;
+    }
+    
+    .card__category{
+      color: var(--text-light);
+      font-size: 1.0rem;
+      margin-bottom: var(--spacing-s);
+      text-transform: uppercase;
+    }
+    
+    .card__heading{
+      color: var(--text-lighter);
+      font-size: 1.9rem;
+      text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+      line-height: 1.4;
+      word-spacing: 100vw;
+    }
+    .text {
+      text-transform: uppercase;
+      background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 10vw;
+      font-family: "Poppins", sans-serif;
+      right: -100%;
+    }
+    
+  </style>
 </head>
 <body>
-    <div class="pattern">
-        <h2 class="pattern-head"><a href="ameaças2 copy.html">DICAS</a></h2>
-        <div class="pattern-body">
-          <div class="bg-red">
-            <h1>Software livre</h1>
-            <h3>Aplicativos gratuitos que quebram um galho :) </h3>  
-
-            <p>Software livre ou não proprietários são aqueles que estão sob uma licença livre e que seu uso, modificação e distribuição são permitidos a todos.</p>
-            <br>
-            <p>São conhecidos também como open source, referindo-se a licença livre que eles tem.
-                A primeira destina a usuários que ao modificarem ou incorporar um software livre
-                em um trabalho próprio deverá disponibilizá-lo também sobre a mesma licença. Já a
-                segunda é mais liberal e destina inclusive a softwares proprietários.
-            </p>
-            <br>
-            <p>Como uma forma segura de fazer download destes softwares/aplicativos da Internet,
-                instalar um software antivírus pode protegê-lo contra downloads carregados de vírus,
-                é sempre melhor saber o mais seguro sites para fazer download de software.
-                Existem muitos sites disponíveis na web de onde você pode baixar software gratuito,
-                tais como os baixados na loja android Google Play e na loja da Mac, AppStore.
-            </p>
-            
-            <h3>SISTEMA OPERACIONAL LINUX</h3>
-            <p></p>
-            <p>Linux é um Sistema Operacional, assim como o Windows e o Mac OS, que possibilita a execução de programas em um computador e outros dispositivos. Linux pode ser livremente modificado e distribuído.Apesar desta interpretação ser simplista é perfeitamente correta e aceitável. </p>
-            <p style="color:blue ;"><a href="https://www.linux.org">linux.org</a></p>
-
-            <h3>BANCO DE DADOS MySQL</h3>
-            <p></p>
-            <p></p>
-            
-            <h3> OPEN OFFICE</h3>
-            <p></p>
-            <p></p>
-            
-            <h3>EDITOR DE IMAGENS GIMP</h3>
-            <p></p>
-            <p></p>
-
-            <h3>LIBRE OFFICE</h3>
-            <p></p>
-            <p></p>
-
-            <h3>AVAST FREE</h3>
-            <p></p>
-            <p></p>
-
-            <h3>BROFFICE</h3>
-            <p></p>
-            <p></p>
-
-            <h3>AVIRAPERSONAL EDITION</h3>
-            <p></p>
-            <p></p>
-
-            <h3>VIDEOSPIN</h3>
-            <p></p>
-            <p></p>
-
-            <h3>AUDACITY</h3>
-            <p></p>
-            <p></p>
-
-            <h3>7 ZIP</h3>
-            <p></p>
-            <p></p>
-
-            <h3> MEGACUBO</h3>
-            <p></p>
-            <p></p>
-
-            <p class="muted">Retirado de <b>norton</b></p>
-            <aside class="aside">
-              <a href="https://br.norton.com/blog/malware/what-is-a-computer-virus#:~:text=Em%20termos%20mais%20técnicos%2C%20um,de%20um%20computador%20para%20outro."><i>Para mais informações</i></a>
-            </aside>
-          </div>      
-        </div>
+  <h1 class="text"><a href="Site copy 2.html" style="text-decoration: none;">DICAS</a></h1>
+<section class="hero-section">
+  <div class="card-grid">
+    <a class="card" href="https://logosmarcas.net/linux-logo/">
+      <div class="card__background" style="background-image: url(linux.jpg)"></div>
+      <div class="card__content">
+        <p class="card__category">SOFTWARE</p>
+        <h3 class="card__heading">SISTEMA OPERACIONAL LINUX</h3>
+        <p><strong>É um sistema operacional gratuito tendo o seu código fonte disponível sob licença GPL possibilitando a qualquer usuário de utilizar, estudar, modificar e distribuir de acordo com os termos da licença.</strong></p>
       </div>
+    </a>
+    <a class="card" href="#">
+      <div class="card__background" style="background-image: url(msql.jpg)"></div>
+      <div class="card__content">
+        <p class="card__category">PROGRAMAÇÃO</p>
+        <h3 class="card__heading">BANCO DE DADOS MySQL</h3>
+        <p><strong>Foi um dos primeiros bancos de dados gratuitos de código aberto a surgir. Sendo muito popular nas comunidades de Startups.</strong></p>
+      </div>
+    </a>
+    <a class="card" href="#">
+      <div class="card__background" style="background-image: url(gimp.jpg)"></div>
+      <div class="card__content">
+        <p class="card__category">DESING</p>
+        <h3 class="card__heading">EDITOR DE IMAGENS GIMP</h3>
+        <p><strong>Possui uma interface fácil de usar, processa as imagens em lotes, ocupa pouco espaço no disco rígido, permitindo alterar seu código fonte e seus menus.</strong></p>
+      </div>
+    </li>
+    <a class="card" href="#">
+      <div class="card__background" style="background-image: url(cad.jpg)"></div>
+      <div class="card__content">
+        <p class="card__category">SOFTWARE</p>
+        <h3 class="card__heading">LIBRECAD</h3>
+        <p><strong>É um software de desenho técnico para Windows, Mac OS X e Linux, tem código de fonte aberto, sendo multiplataforma e ter suporte a plugins, possui salvamento automático e tem leitura melhorada de arquivos DXF.</strong></p>
+      </div>
+    </a>
+    <a class="card" href="#">
+      <div class="card__background" style="background-image: url(avast.jpg)"></div>
+      <div class="card__content">
+        <p class="card__category">ANTIVIRUS</p>
+        <h3 class="card__heading">AVAST FREE</h3>
+        <p><strong>É um software de segurança com mecanismo de varredura e identificação de vírus e ameaças em tempo real, que funciona na nuvem.</strong></p>
+      </div>
+    </li>
+    <a class="card" href="#">
+      <div class="card__background" style="background-image: url(avira.jpg)"></div>
+      <div class="card__content">
+        <p class="card__category">ANTIVIRUS</p>
+        <h3 class="card__heading">AVIRA PERSONAL EDITION</h3>
+        <p><strong>Sistema gratuito de proteção contra vírus, sendo uns dos campeões de download.</strong></p>
+      </div>
+    <a class="card" href="#">
+      <div class="card__background" style="background-image: url(libre.jpg)"></div>
+      <div class="card__content">
+        <p class="card__category">ADMINISTRAÇÃO</p>
+        <h3 class="card__heading">LIBREOFFICE</h3>
+        <p><strong>É uma suíte de aplicativos livres e de código aberto para escritório disponível para Windows, Unix, Solaris, Linux e macOS. A suíte utiliza o formato OpenDocument (ODF - OpenDocument Format) — formato homologado como ISO/IEC 26300 e NBR ISO/IEC 26300 — e é também compatível com os formatos do Microsoft Office, além de outros formatos ligados.</strong></p>
+      </div>
+    </a>
+    <a class="card" href="#">
+      <div class="card__background" style="background-image: url(spin.jpg) " ></div>
+      <div class="card__content">
+        <p class="card__category">DESING</p>
+        <h3 class="card__heading">VÍDEOSPIN</h3>
+        <p><strong>Um editor de vídeos gratuito muito versátil, podendo adicionar efeitos neles e ainda com outras muitas funções úteis.</strong></p>
+      </div>
+    </a>
+    <a class="card" href="#">
+      <div class="card__background" style="background-image: url(7.jpg)"></div>
+      <div class="card__content">
+        <p class="card__category">COMPACTADOR</p>
+        <h3 class="card__heading">7_ZIP</h3>
+        <p><strong>O aplicativo é gratuito e apresenta ótima qualidade de compactação e baixíssima taxa de erro em seus processos.</strong></p>
+      </div>
+    </a>
+    <a class="card" href="#">
+      <div class="card__background" style="background-image: url(megacubo.jpg)"></div>
+      <div class="card__content">
+        <p class="card__category">STREAM</p>
+        <h3 class="card__heading">MEGACUBO</h3>
+        <p><strong>Na transmissão de vídeos e canais gratuitos e uma boa opção para essa função, necessitando uma ótima conexão de banda larga.</strong></p>
+      </div>
+    </a>
+    <a class="card" href="#">
+      <div class="card__background" style="background-image: url(audacity.jpg)"></div>
+      <div class="card__content">
+        <p class="card__category">EDITOR</p>
+        <h3 class="card__heading">AUDACITY</h3>
+        <p><strong>É um poderoso software de gravação e edição de áudio gratuito e de código aberto. Mas não se engane pela palavra “grátis”. Isso porque, mesmo sendo gratuito, ele faz frente a qualquer software de áudio ou plugin pago com seu poderoso conjunto de recursos.</strong></p>
+      </div>
+    </a>
+  <div>
+</section>
 </body>
 </html>
